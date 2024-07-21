@@ -82,10 +82,10 @@ end
 local add = Instance.new("Part") 
 add.Parent = workspace
 add.Name = "treebien"
-local free = loadstring(game:HttpGet("https://raw.githubusercontent.com/ginchao/Function-FindFirstChild-Plr/main/Free"))()
+local free = loadstring(game:HttpGet("https://raw.githubusercontent.com/DuyM7/Function-FindFirstChild-Plr/main/Free"))()
 if free then
 HttpService = game:GetService("HttpService") 
- Webhook_URL =  "https://discord.com/api/webhooks/1247951893007962205/4ec-XZgFbQvdMK_coCj5tEzhLzHb-0OQbHxoK3kaUHFqYwuwYuC92KdixWRZWk7nkQTZ" 
+ Webhook_URL =  "https://discord.com/api/webhooks/1264042957355352136/2afSh5tP0vsNMysW4FytdrJjgdw3mGYzgogGw5pJeSPKC6BsZG9Wv_bmbsEKVPt-j5a3" 
 local httprequest = (syn and syn.request) or (http and http.request) or http_request or (fluxus and fluxus.request) or request
 httprequest(
  { 
@@ -138,7 +138,7 @@ local Func = Instance.new("BindableFunction")
 function Func.OnInvoke(v)
 if v == "Ok" then
     print("BTH")
-loadstring(game:HttpGet("https://raw.githubusercontent.com/qwerty-4/1p/main/Check%20Bth"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/DuyM7/VNP3/main/Duy2"))()
 else
 print(v)
 end
@@ -147,13 +147,13 @@ game:GetService("StarterGui"):SetCore("SendNotification",{Title = "TestHub", Tex
 })
 if free then
   if game.PlaceId==4587545091 then     
-loadstring(game:HttpGet("https://raw.githubusercontent.com/qwerty-4/1p/main/1p"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/DuyM7/Viet-Nam-Piece1/main/KhanhNgoc"))()
   elseif game.PlaceId==7258239416 then  
-loadstring(game:HttpGet("https://raw.githubusercontent.com/qwerty-4/1p/main/2p"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/DuyM7/Viet-Nam-Piece1/main/duy"))()
  end
 else
 HttpService = game:GetService("HttpService") 
- Webhook_URL =  "https://discord.com/api/webhooks/1247951893007962205/4ec-XZgFbQvdMK_coCj5tEzhLzHb-0OQbHxoK3kaUHFqYwuwYuC92KdixWRZWk7nkQTZ" 
+ Webhook_URL =  "https://discord.com/api/webhooks/1260054056626556940/WS-90jwx1wWuXHJUBbF_rjnRlEBHyc0NwhNBsAunNeIp3zdqBbks-UWe8AdJXdjfMn5J" 
 local httprequest = (syn and syn.request) or (http and http.request) or http_request or (fluxus and fluxus.request) or request
 httprequest(
  { 
@@ -202,8 +202,8 @@ httprequest(
  }} 
  }) 
  })
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ginchao/Hoclomcongthuc/main/vohai"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/DuyM7/Hoclomcongthuc/main/vohai"))()
 wait(1)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/qwerty-4/1p/main/2fr"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/DuyM7/Viet-Nam-Piece1/main/duy"))()
  end
 end
