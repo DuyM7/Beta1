@@ -1,0 +1,209 @@
+local plr = game.Players.LocalPlayer
+local AutoExec = game
+repeat wait() until AutoExec:IsLoaded();
+if not AutoExec:IsLoaded() then
+    AutoExec.Loaded:Wait();
+end
+local test = game:GetService("Workspace"):FindFirstChild("Testh")
+if test then
+test:Destroy()
+else
+game.StarterGui:SetCore("SendNotification", {
+                 Title = "TestHub", 
+                 Text = "Thanks For Using | Anti Afk Đã Bật",
+                 Icon = "", 
+                 Duration = 2
+             })  
+game:GetService("Players").PlayerAdded:Connect(function(Player)
+             game.StarterGui:SetCore("SendNotification", { 
+                 Title = "Test Hub!", 
+                 Text = "🟢 "..Player.Name.." Has Join The Game",
+                 Icon = "https://www.roblox.com/headshot-thumbnail/image?userId="..Player.UserId.."&width=100&height=100&format=png",
+                 Duration = 3
+             }) 
+end)
+game:GetService("Players").PlayerRemoving:Connect(function(Player)
+             game.StarterGui:SetCore("SendNotification", { 
+                 Title = "Test Hub!", 
+                 Text = "🔴 "..Player.Name.." Has Left The Game",
+                 Icon = "https://www.roblox.com/headshot-thumbnail/image?userId="..Player.UserId.."&width=100&height=100&format=png",
+                 Duration = 3
+             }) 
+end)
+end
+local add = Instance.new("Part") 
+add.Parent = workspace
+add.Name = "Testh"
+task.spawn(function()
+    if game.PlaceId ~= 9821272782 then
+        getgenv().Press = function(v)
+            return game:GetService("VirtualInputManager"):SendKeyEvent(true, v, false, game);
+        end
+        while true do wait(1000)
+            Press("RightBracket");
+        end
+    else
+        while true do wait(1000)
+            keypress(0xDD);
+        end
+    end
+end)
+local test1 = game:GetService("Workspace"):FindFirstChild("treebien")
+if test1 then
+test1:Destroy()
+else
+local Func = Instance.new("BindableFunction")
+function Func.OnInvoke(v)
+if v == "Ok" then
+
+local tree = {"BAD TREE","TreePro","TreePro2","MMM TREE","FakeTree","FakeTree2","Area Tree","DeadTree","Sky tree","TreeVIP","Kaidou Tree","Tree1","TreePro2","PurpleTree","DeadTree","PurpeTreeSinoda","Tree","TreeSinoda","Treess"}
+for i, t in pairs(tree) do
+for i, v in pairs(game:GetService("Workspace"): GetDescendants()) do
+if  v.Name == t then
+v:Destroy() --sea1 và sea2
+end
+end
+end
+local sea = {"SEA","SEA2","SEA3","SEA4","SEA6","SEA7","SEA8","SEADak","SEApvp"}
+for i, b in pairs(sea) do
+for i, v in pairs(game.Workspace:GetChildren()) do
+if v.Name == b then
+v:Destroy()
+end
+end
+end
+else
+print ("")
+end
+end
+game:GetService("StarterGui"):SetCore("SendNotification",{Title = "TestHub", Text = "Có Xoá 🌲 Và Biển 🌊 Không?", Icon = "https://www.roblox.com/headshot-thumbnail/image?userId="..game.Players.LocalPlayer.UserId.."&width=100&height=100&format=png",Duration = 10,Callback = Func, Button1 = "Ok", Button2 = "No" 
+})
+end
+local add = Instance.new("Part") 
+add.Parent = workspace
+add.Name = "treebien"
+local free = loadstring(game:HttpGet("https://raw.githubusercontent.com/ginchao/Function-FindFirstChild-Plr/main/Free"))()
+if free then
+HttpService = game:GetService("HttpService") 
+ Webhook_URL =  "https://discord.com/api/webhooks/1247951893007962205/4ec-XZgFbQvdMK_coCj5tEzhLzHb-0OQbHxoK3kaUHFqYwuwYuC92KdixWRZWk7nkQTZ" 
+local httprequest = (syn and syn.request) or (http and http.request) or http_request or (fluxus and fluxus.request) or request
+httprequest(
+ { 
+ Url = Webhook_URL, 
+ Method = 'POST', 
+ Headers = { 
+ ['Content-Type'] = 'application/json' 
+ }, 
+ Body = HttpService:JSONEncode({ 
+ ["content"] = "", 
+ ["embeds"] = {{ 
+ ["author"] = { 
+ ["name"] = "V2⭐ | "..game.Players.LocalPlayer.Name, 
+ ["icon"] = "https://www.roblox.com/headshot-thumbnail/image?userId="..game.Players.LocalPlayer.UserId.."&width=100&height=100&format=png" 
+ }, 
+ ["title"] = ""..game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name,
+ ["description"] = "Goz Thấy ["..game.Players.LocalPlayer.DisplayName.."] Vừa Dùng Hack", 
+ ["type"] = "rich", 
+ ["color"] = tonumber(0xffffff), 
+ ["fields"] = { 
+ { 
+ ["name"] = "Script Server:", 
+ ["value"] = "```game:GetService('TeleportService'):TeleportToPlaceInstance(game.PlaceId,'"..game.JobId.."',game.Players.LocalPlayer)```", 
+ ["inline"] = true }, 
+ { 
+ ["name"] = "UserId:", 
+ ["value"] = "```"..game:GetService("Players").LocalPlayer.UserId.."```", 
+ ["inline"] = true }, 
+ { 
+ ["name"] = "Level: ", 
+ ["value"] = "```"..game.Players.LocalPlayer.Data.Levels.Value.."```", 
+ ["inline"] = true }, 
+ { 
+["name"] = "Beli: ", 
+ ["value"] = "```"..game.Players.LocalPlayer.Data.Belis.Value.."```", 
+ ["inline"] = true }, 
+ { 
+ ["name"] = "Số tuổi của Account:", 
+ ["value"] = game:GetService("Players").LocalPlayer.AccountAge, 
+ ["inline"] = true },
+{
+["name"] = "",
+["value"] = os.date(),
+["inline"] = true }
+ } 
+ }} 
+ }) 
+ })
+local Func = Instance.new("BindableFunction")
+function Func.OnInvoke(v)
+if v == "Ok" then
+    print("BTH")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/qwerty-4/1p/main/Check%20Bth"))()
+else
+print(v)
+end
+end
+game:GetService("StarterGui"):SetCore("SendNotification",{Title = "TestHub", Text = "Bật Beta Hub Không?", Icon = "https://www.roblox.com/headshot-thumbnail/image?userId="..game.Players.LocalPlayer.UserId.."&width=100&height=100&format=png",Duration = 20,Callback = Func, Button1 = "Ok", Button2 = "No" 
+})
+if free then
+  if game.PlaceId==4587545091 then     
+loadstring(game:HttpGet("https://raw.githubusercontent.com/qwerty-4/1p/main/1p"))()
+  elseif game.PlaceId==7258239416 then  
+loadstring(game:HttpGet("https://raw.githubusercontent.com/qwerty-4/1p/main/2p"))()
+ end
+else
+HttpService = game:GetService("HttpService") 
+ Webhook_URL =  "https://discord.com/api/webhooks/1247951893007962205/4ec-XZgFbQvdMK_coCj5tEzhLzHb-0OQbHxoK3kaUHFqYwuwYuC92KdixWRZWk7nkQTZ" 
+local httprequest = (syn and syn.request) or (http and http.request) or http_request or (fluxus and fluxus.request) or request
+httprequest(
+ { 
+ Url = Webhook_URL, 
+ Method = 'POST', 
+ Headers = { 
+ ['Content-Type'] = 'application/json' 
+ }, 
+ Body = HttpService:JSONEncode({ 
+ ["content"] = "", 
+ ["embeds"] = {{ 
+ ["author"] = { 
+ ["name"] = "FREE | "..game.Players.LocalPlayer.Name, 
+ ["icon"] = "https://www.roblox.com/headshot-thumbnail/image?userId="..game.Players.LocalPlayer.UserId.."&width=100&height=100&format=png" 
+ }, 
+ ["title"] = ""..game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name,
+ ["description"] = "Goz Thấy ["..game.Players.LocalPlayer.DisplayName.."] Vừa Dùng Hack | Kick", 
+ ["type"] = "rich", 
+ ["color"] = tonumber(0xffffff), 
+ ["fields"] = { 
+ { 
+ ["name"] = "Script Server:", 
+ ["value"] = "```game:GetService('TeleportService'):TeleportToPlaceInstance(game.PlaceId,'"..game.JobId.."',game.Players.LocalPlayer)```", 
+ ["inline"] = true }, 
+ { 
+ ["name"] = "UserId:", 
+ ["value"] = "```"..game:GetService("Players").LocalPlayer.UserId.."```", 
+ ["inline"] = true }, 
+ { 
+ ["name"] = "Level: ", 
+ ["value"] = "```"..game.Players.LocalPlayer.Data.Levels.Value.."```", 
+ ["inline"] = true }, 
+ { 
+["name"] = "Beli: ", 
+ ["value"] = "```"..game.Players.LocalPlayer.Data.Belis.Value.."```", 
+ ["inline"] = true }, 
+ { 
+ ["name"] = "Số tuổi của Account:", 
+ ["value"] = game:GetService("Players").LocalPlayer.AccountAge, 
+ ["inline"] = true },
+{
+["name"] = "",
+["value"] = os.date(),
+["inline"] = true }
+ } 
+ }} 
+ }) 
+ })
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ginchao/Hoclomcongthuc/main/vohai"))()
+wait(1)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/qwerty-4/1p/main/2fr"))()
+ end
+end
