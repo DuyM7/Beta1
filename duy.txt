@@ -1776,3 +1776,4 @@ drops:Label("Rớt Item Sẽ Hiện Bên Dưới ↓:")
 
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/DuyM7/Function-FindFirstChild-Plr/main/blacklist"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/DuyM7/VNP3/main/Duy2"))()
