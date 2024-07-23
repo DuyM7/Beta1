@@ -1,5 +1,10 @@
 if game.PlaceId==7258239416 then
-loadstring(game:HttpGet('https://raw.githubusercontent.com/ginchao/Viet-Nam-Piece/main/Beta'))()  
+loadstring(game:HttpGet(''))()  
 elseif not game.PlaceId==7258239416 then
-loadstring(game:HttpGet('https://raw.githubusercontent.com/ginchao/TestHub/main/Universal'))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/DuyM7/VNP3/main/Duy2'))()
+end
+if game.PlaceId==4587545091 then
+loadstring(game:HttpGet('https://raw.githubusercontent.com/DuyM7/Viet-Nam-Piece1/main/duy'))()  
+elseif not game.PlaceId==4587545091 then
+loadstring(game:HttpGet('https://raw.githubusercontent.com/DuyM7/VNP3/main/Duy2'))()
 end
