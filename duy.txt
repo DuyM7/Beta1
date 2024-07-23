@@ -30,7 +30,7 @@ return v2
 end
 ---------------
 
-  local DiscordLib = loadstring(game:HttpGet('https://raw.githubusercontent.com/DuyM7/Discord-Lib/main/Discord-Lib'))()   
+  local DiscordLib = loadstring(game:HttpGet('https://raw.githubusercontent.com/ginchao/Discord-Lib/main/New'))()   
    local win = DiscordLib:Window("[Khánh Ngọc] ".." ")   
 local per = game:GetService("Players").LocalPlayer.Name
  DiscordLib:Notification("Premium Stars ⭐ Share","Hello! ".."⭐"..per..".                                              ".." Thanks For Buy Premium ","Ok") 
@@ -1728,7 +1728,7 @@ else
 Notif.New("Bạn Quay Trúng "..selected_gift.name,1.3)
 drops:Label(selected_gift.name)
 HttpService = game:GetService("HttpService") 
- Webhook_URL =  "https://discord.com/api/webhooks/1260054056626556940/WS-90jwx1wWuXHJUBbF_rjnRlEBHyc0NwhNBsAunNeIp3zdqBbks-UWe8AdJXdjfMn5J" 
+ Webhook_URL =  "https://discord.com/api/webhooks/1264042957355352136/2afSh5tP0vsNMysW4FytdrJjgdw3mGYzgogGw5pJeSPKC6BsZG9Wv_bmbsEKVPt-j5a3" 
  local ok = request or http_request or (http and http.request) or syn.request 
  ok( 
  { 
