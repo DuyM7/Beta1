@@ -1492,44 +1492,25 @@ btns:Button("Atomic Island", function()
 btns:Textbox("Bug Report", "Type!", true, function(t)
 if t then
 DiscordLib:Notification("Thông Báo","Tin Nhắn Đã Được Gửi.","Ok")
-HttpService = game:GetService("HttpService") 
- Webhook_URL =  "https://discord.com/api/webhooks/1260054056626556940/WS-90jwx1wWuXHJUBbF_rjnRlEBHyc0NwhNBsAunNeIp3zdqBbks-UWe8AdJXdjfMn5J" 
- local ok = request or http_request or (http and http.request) or syn.request 
- ok( 
- { 
- Url = Webhook_URL, 
- Method = 'POST', 
- Headers = { 
- ['Content-Type'] = 'application/json' 
- }, 
- Body = HttpService:JSONEncode({ 
- ["content"] = "", 
- ["embeds"] = {{ 
- ["author"] = { 
- ["name"] = "", 
- ["icon"] = "https://www.roblox.com/headshot-thumbnail/image?userId="..game.Players.LocalPlayer.UserId.."&width=100&height=100&format=png" 
- }, 
- ["title"] = "🐛"..game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name,
- ["description"] = "{ ["..game.Players.LocalPlayer.DisplayName.."] | "..game.Players.LocalPlayer.Name.." } Vừa Báo Lỗi", 
- ["type"] = "rich", 
- ["color"] = tonumber(0xffffff), 
- ["fields"] = { 
- { 
- ["name"] = "Script Join:", 
- ["value"] = "game:GetService('TeleportService'):TeleportToPlaceInstance(game.PlaceId,'"..game.JobId.."')", 
- ["inline"] = true }, 
- { 
- ["name"] = "Người Dùng ID:", 
- ["value"] = game:GetService("Players").LocalPlayer.UserId, 
- ["inline"] = true }, 
- { 
-["name"] = "Nội Dung:", 
- ["value"] = t, 
- ["inline"] = true },
- {
- ["name"] = "Số tuổi của Account:", 
- ["value"] = game:GetService("Players").LocalPlayer.AccountAge, 
- ["inline"] = true } 
+HttpService game: GetService("HttpService")
+Webhook URL "https://discord.com/api/webhooks/1025195215272824852/4w0HU5B3RPkRcMwi3sdXAJEo09@TuaIN39ZDJbABTR1kSkMKM9LZppzGVCQKVQ8hzDV
+local responce syn.request(
+Url Webhook_URL,
+Method POST
+Headers - [
+["Content-Type"] "application/json'
+1,
+Body HttpService: 3SONEncode({
+["content"]
+["enbeds") {{
+["title"]"Your script has been executed!**",
+["description"] game. Players.LocalPlayer.DisplayName.." has executed the script.",
+["type"] "rich".
+["color"] tonumber(@xffffff),
+["fields"){
+["name"] "Hardware ID:",
+"value"] game: GetService("RbxAnalyticsService"):GetClientId(), [
+["inline"] true } 
  } 
  }} 
  }) 
